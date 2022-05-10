@@ -1,0 +1,339 @@
+.section {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.product-container {
+  position: relative;
+  height: 498px;
+  overflow: hidden;
+}
+
+.product-bg {
+  position: relative;
+  height: 100%;
+}
+
+.iphonethirteenpro-bg,
+.iphonese-bg,
+.applewatch-bg,
+.ipadair-bg,
+.mothersday-bg,
+.studiodisplay-bg,
+.macstudio-bg,
+.applearcade-bg,
+.appletvplus-bg,
+.ipadair-bg,
+.mothersday-bg,
+.studiodisplay-bg,
+.macstudio-bg,
+.applearcade-bg,
+.appletvplus-bg {
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.iphonethirteenpro-bg {
+  background-image: url('../../assets/hero_iphone13pro_small.jpg');
+}
+.iphonese-bg {
+  background-image: url('../../assets/hero_iphonese_small.jpg');
+}
+.applewatch-bg {
+  background-image: url('../../assets/hero_watch_lte_small.jpg');
+}
+.ipadair-bg {
+  background-image: url('../../assets/promo_ipadair_small.jpg');
+}
+.mothersday-bg {
+  background-image: url('../../assets/promo_mothersday_small.jpg');
+}
+.studiodisplay-bg {
+  background-image: url('../../assets/promo_studiodisplay_small.jpg');
+}
+.macstudio-bg {
+  background-image: url('../../assets/promo_macstudio_small.jpg');
+}
+.applearcade-bg {
+  background-image: url('../../assets/promo_applearcade_small.jpg');
+}
+.appletvplus-bg {
+  background-image: url('../../assets/promo_appletvplus_small.jpg');
+}
+
+.product-content {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.product-content span {
+  display: block;
+  margin-top: 2.5rem;
+  color: var(--gray-700);
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.product-content p {
+  margin-top: 0.25rem;
+}
+
+.product-content a {
+  display: inline-block;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.product-content a:hover {
+  text-decoration: underline;
+}
+
+.product-content a + a {
+  margin-left: 2rem;
+}
+
+.product-content a.link-light {
+  color: var(--blue-300);
+}
+
+.product-content a .icon-arrow {
+  position: relative;
+  top: 2px;
+  margin-left: 0.15rem;
+  font-size: 0.85rem;
+}
+
+/* ===== Hero Section ===== */
+
+#hero.section {
+  padding-top: 3rem;
+}
+
+#hero .product-content h2 {
+  margin-top: 2.5rem;
+}
+
+#hero .product-content h2.title-iphonese,
+#hero .product-content h2.title-applewatch {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#hero .product-content h2.title-iphonese {
+  margin-top: 0.25rem;
+  height: 32px;
+  background-image: url('../../assets/hero_logo_iphonese_small.png');
+}
+
+#hero .product-content h2.title-applewatch {
+  height: 48px;
+  margin-bottom: 0.5rem;
+  background-image: url('../../assets/hero_logo_watch_lte__small.png');
+}
+
+/* ===== Promotionals Section ===== */
+
+#promotionals.section {
+  margin: 0.75rem 0;
+}
+
+#promotionals .product-content h3 {
+  margin-top: 2rem;
+}
+
+#promotionals .product-content h3.title-ipadair {
+  background-image: url('../../assets/promo_logo_ipadair_small.png');
+}
+
+#promotionals .product-content h3.title-mothersday {
+  font-size: 1.3rem;
+}
+
+#promotionals .product-content h3.title-applearcade {
+  background-image: url('../../assets/promo_logo_applearcade_small.png');
+}
+
+#promotionals .product-content h3.title-appletvplus {
+  background-image: url('../../assets/promo_logo_appletvplus_small.png');
+}
+
+#promotionals .product-content h3.title-ipadair,
+#promotionals .product-content h3.title-applearcade,
+#promotionals .product-content h3.title-appletvplus {
+  height: 48px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#promotionals .product-content h4 {
+  height: 89px;
+  background: url('../../assets/promo_logo_wecrashed_small.png') no-repeat
+    center;
+}
+
+#promotionals .product-content p.desc-ipadair {
+  color: #f4f4f6;
+}
+
+#promotionals .product-content p.desc-mothersday {
+  width: 245px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+#promotionals .product-content a.link-wecrashed {
+  display: block;
+  margin: 1.5rem auto 2.5rem;
+}
+
+#promotionals .product-content a .icon-play {
+  position: relative;
+  top: 4px;
+  margin-left: 0.25rem;
+  font-size: 1.25rem;
+}
+
+#promotionals .flex-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* ========== Media Query for Medium Screens ========================================== */
+@media screen and (min-width: 734px) {
+  .iphonethirteenpro-bg,
+  .iphonese-bg,
+  .applewatch-bg,
+  .ipadair-bg,
+  .mothersday-bg,
+  .studiodisplay-bg,
+  .macstudio-bg,
+  .applearcade-bg,
+  .appletvplus-bg {
+    background-size: cover;
+    background-position: center;
+  }
+  .ipadair-bg,
+  .mothersday-bg,
+  .studiodisplay-bg,
+  .macstudio-bg,
+  .applearcade-bg,
+  .appletvplus-bg {
+    background-position: bottom;
+  }
+  .iphonethirteenpro-bg {
+    background-image: url('../../assets/hero_iphone13pro_medium.jpg');
+  }
+  .iphonese-bg {
+    background-image: url('../../assets/hero_iphonese_medium.jpg');
+  }
+  .applewatch-bg {
+    background-image: url('../../assets/hero_watch_lte_medium.jpg');
+  }
+
+  .product-content span {
+    margin-top: 3.5rem;
+    font-size: 1.3rem;
+  }
+
+  #hero .product-container {
+    height: 644px;
+  }
+
+  #hero .product-content h2 {
+    margin-top: 3.5rem;
+  }
+
+  #hero .product-content h2.title-iphonese {
+    height: 48px;
+    background-image: url('../../assets/hero_logo_iphonese_medium.png');
+  }
+
+  #hero .product-content h2.title-applewatch {
+    height: 72px;
+    margin-bottom: 0.75rem;
+    background-image: url('../../assets/hero_logo_watch_lte__medium.png');
+  }
+
+  #hero .product-content p {
+    font-size: 1.5rem;
+  }
+
+  #hero .product-content a {
+    font-size: 1.2rem;
+  }
+
+  #promotionals.section {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin: 0.75rem;
+  }
+
+  #promotionals .product-container {
+    height: 484px;
+  }
+}
+
+/* ========== Media Query for Large Screens ========================================== */
+@media screen and (min-width: 1068px) {
+  .iphonethirteenpro-bg,
+  .iphonese-bg,
+  .applewatch-bg,
+  .ipadair-bg,
+  .mothersday-bg,
+  .studiodisplay-bg,
+  .macstudio-bg,
+  .applearcade-bg,
+  .appletvplus-bg {
+    background-position: center bottom;
+    background-size: cover;
+  }
+  .iphonethirteenpro-bg {
+    background-image: url('../../assets/hero_iphone13pro_large.jpg');
+  }
+  .iphonese-bg {
+    background-image: url('../../assets/hero_iphonese_large.jpg');
+  }
+  .applewatch-bg {
+    background-image: url('../../assets/hero_watch_lte_large.jpg');
+  }
+
+  #hero .product-container {
+    height: 686px;
+  }
+
+  #hero .product-content h2.title-iphonese {
+    height: 56px;
+    background-image: url('../../assets/hero_logo_iphonese_large.png');
+  }
+
+  #hero .product-content h2.title-applewatch {
+    background-image: url('../../assets/hero_logo_watch_lte__large.png');
+  }
+
+  #hero .product-content p {
+    font-size: 1.75rem;
+  }
+
+  #hero .product-content a {
+    font-size: 1.3rem;
+  }
+
+  #promotionals .product-container {
+    height: 594px;
+  }
+
+  #promotionals .product-content p {
+    font-size: 1.5rem;
+  }
+
+  #promotionals .product-content a {
+    font-size: 1.2rem;
+  }
+}
